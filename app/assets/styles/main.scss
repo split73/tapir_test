@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+}
+
+.app__main {
+  flex: 1 0 auto;
+}
+
+.header__inner {
+  padding: 19px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 32px;
+  height: 32px;
+  background-color: #ff0000;
+}
+
+.header__logo--hidden {
+  visibility: hidden;
+}
+
+.header__nav {
+  display: flex;
+  gap: 40px;
+  padding: 10px 24px;
+  background-color: #f5f5f5;
+}
+
+.header__link {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.hero {
+  background-color: #ffffff;
+  padding: 120px 48px 160px;
+}
+
+
+.hero__title {
+  font-style: normal;
+  font-family: 'Golos Text';
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 12px 32px;
+  background-color: #ff0000;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.catalog-page {
+  background-color: #ffffff;
+  padding: 80px 48px 120px;
+}
+
+.catalog-page__title {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 110%;
+  text-align: center;
+  margin-bottom: 56px;
+  letter-spacing: 0.2em;
+}
+
+.catalog-page__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px 32px;
+}
+
+.catalog-page__controls {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.catalog-page__more-button,
+.catalog-page__retry-button {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px 24px;
+  border: 1px solid #000;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.catalog-page__loading {
+  font-size: 14px;
+}
+
+.catalog-page__error-text {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.product-card__image-link {
+  display: block;
+}
+
+.product-card__image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.product-card__info {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.product-card__price-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.product-card__price {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000000;
+}
+
+.product-card__price-badge {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.05em;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  border: 1px solid #000;
+  background-color: #000;
+}
+
+.product-card__name {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  line-height: 1.3;
+}
+
+.product-card__favorite {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-card__favorite .nuxt-icon svg {
+  width: auto;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 48px 48px;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.footer__title {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  margin-bottom: 16px;
+  color: #6F6F6F;
+}
+
+.footer__link {
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  display: block;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 1024px) {
+  .catalog-page__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .header__inner {
+    padding: 16px 20px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+
+  .hero {
+    padding: 80px 20px 100px;
+  }
+
+  .catalog-page {
+    padding: 48px 20px 80px;
+  }
+
+  .catalog-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 16px;
+  }
+
+  .footer {
+    padding: 32px 20px 40px;
+  }
+
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog-page__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
