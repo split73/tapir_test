@@ -10,7 +10,9 @@
         <a href="#" class="header__link">Блог</a>
         <a href="#" class="header__link">О нас</a>
       </nav>
-      <div class="header__logo header__logo--hidden" aria-label="Логотип"></div>
+      <div class="header__burger" aria-label="Логотип">
+        <nuxt-icon name="menu"></nuxt-icon>
+      </div>
     </div>
   </header>
 </template>

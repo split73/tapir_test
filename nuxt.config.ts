@@ -4,4 +4,5 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/styles/main.scss'],
   modules: ['@nuxt/eslint', 'nuxt-icons'],
+  nuxtIcons: {path: '~/app/assets/icons'}
 })
