@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <div class="header__inner">
-      <div class="header__logo" aria-label="Логотип"></div>
+      <NuxtLink to="/" class="header__logo"/>
       <nav class="header__nav">
         <a href="#" class="header__link">Мужчинам</a>
         <a href="#" class="header__link">Женщинам</a>

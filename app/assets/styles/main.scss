@@ -210,10 +210,11 @@ body {
   width: 24px;
   height: 24px;
   border: none;
-  background-color: #ffffff;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .product-card__favorite .nuxt-icon svg {

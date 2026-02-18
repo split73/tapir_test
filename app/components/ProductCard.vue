@@ -41,5 +41,3 @@ const props = defineProps<{
 const formattedPrice = computed(() => props.product.price.toLocaleString('ru-RU'))
 const doubledPrice = computed(() => Math.ceil(props.product.price / 2).toLocaleString('ru-RU'))
 </script>
-
-
